@@ -3,6 +3,8 @@ import streamlit as st
 st.title("Fatin Nurasiyah's Resume")
 
 st.header("Contact Information")
+st.write("**Name:** Fatin Nurasiyah binti Abdul Rahim")
+st.write("**NRIC:** 020324-02-0672")
 st.write("**Email:** rhfatin@gmail.com")
 st.write("**Phone:** (+60) 16-480-5956")
 st.write("**LinkedIn:** [fatin-nurasiyah](https://www.linkedin.com/in/fatin-nurasiyah)")
