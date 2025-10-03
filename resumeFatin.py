@@ -1,4 +1,4 @@
- import streamlit as st
+import streamlit as st
 
      st.title("Fatin Nurasiyah's Resume")
      st.header("Contact Information")
