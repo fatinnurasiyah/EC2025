@@ -1,24 +1,19 @@
 import streamlit as st
 
-# Profile Section
 col1, col2 = st.columns([1, 3])
 
 with col1:
-    st.image("FATIN.jpg", width=150)  
+    st.image("FATIN.jpg", width=100)  
 with col2:
     st.title("Fatin Nurasiyah Abdul Rahim")
     st.write("📧 rhfatin@gmail.com | 📱 (+60) 16-480-5956")
     st.markdown("🔗 (https://www.linkedin.com/in/fatin-nurasiyah)")
-
 st.markdown("---")
 
-# Education Section
 st.header("🎓 Education")
 st.write("**Bachelor in Information Technology**, University of Malaysia, Kelantan (2023–2027)")
-
 st.markdown("---")
 
-# Work Experience Section
 st.header("💼 Work Experience")
 
 col1, col2 = st.columns(2)
@@ -30,6 +25,7 @@ with col1:
     - Assisted in IT-related tasks  
     - Gained exposure to real-world business systems
     """)
+
 
 with col2:
     st.subheader("Crew (F&B)")
@@ -44,10 +40,8 @@ st.markdown("""
 - Managed stock distribution and customer engagement  
 - Enhanced sales through effective marketing strategies
 """)
-
 st.markdown("---")
 
-# Skills Section
 st.header("⚡ Skills")
 col1, col2 = st.columns(2)
 
@@ -63,10 +57,8 @@ with col2:
     - Business & marketing experience  
     - Customer service excellence
     """)
-
 st.markdown("---")
 
-# Projects Section
 st.header("🚀 Projects")
 
 st.subheader("Security Smart Home Automation (Diploma Project)")
