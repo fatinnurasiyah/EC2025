@@ -1,54 +1,98 @@
 import streamlit as st
 
-st.title("Fatin Nurasiyah's Resume")
+# Sidebar Navigation
+st.sidebar.title("📌 Navigation")
+page = st.sidebar.radio("Go to:", ["About Me", "Education", "Work Experience", "Skills", "Projects"])
 
-st.header("Contact Information")
-st.write("**Name:** Fatin Nurasiyah binti Abdul Rahim")
-st.write("**NRIC:** 020324-02-0672")
-st.write("**Email:** rhfatin@gmail.com")
-st.write("**Phone:** (+60) 16-480-5956")
-st.write("**LinkedIn:** [fatin-nurasiyah](https://www.linkedin.com/in/fatin-nurasiyah)")
+# About Me Page
+if page == "About Me":
+    col1, col2 = st.columns([1, 3])
+    with col1:
+        st.image("FATIN.jpg", width=150) 
+    with col2:
+        st.title("Fatin Nurasiyah binti Abdul Rahim")
+        st.write("📧 rhfatin@gmail.com | 📱 (+60) 16-480-5956")
+        st.markdown("🔗 [LinkedIn](https://www.linkedin.com/in/fatin-nurasiyah)")
+        st.write("🆔 NRIC: 020324-02-0672")
 
-st.header("Education")
-st.write("**Bachelor in Information Technology**, University of Malaysia, Kelantan (2023–2027)")
+    st.markdown("---")
+    st.subheader("👩‍💻 About Me")
+    st.write("""
+    I am a motivated Information Technology student at University of Malaysia, Kelantan,
+    passionate about software development, IoT projects, and mobile app design.
+    I enjoy solving real-world problems through innovative technology solutions.
+    """)
 
-st.header("Work Experience")
+# Education Page
+elif page == "Education":
+    st.header("🎓 Education")
+    st.write("**Bachelor in Information Technology**, University of Malaysia, Kelantan (2023–2027)")
 
-st.subheader("Internship (Diploma) – Asia Tech Biz Sdn Bhd (6 months)")
-st.markdown("""
-- Assisted in IT-related tasks  
-- Gained exposure to real-world business systems
-""")
+# Work Experience Page
+elif page == "Work Experience":
+    st.header("💼 Work Experience")
 
-st.subheader("Crew (F&B) – 2 years")
-st.markdown("""
-- Provided customer service in food & beverage operations  
-- Handled orders, ensured customer satisfaction, and maintained service quality
-""")
+    col1, col2 = st.columns(2)
 
-st.header("Skills")
-st.markdown("""
-- **Programming Languages:** Java, C++  
-- **Web Development:** HTML, Flutter
-""")
+    with col1:
+        st.subheader("Internship (Diploma)")
+        st.write("**Asia Tech Biz Sdn Bhd** | 6 months")
+        st.markdown("""
+        - Assisted in IT-related tasks  
+        - Gained exposure to real-world business systems
+        """)
 
-st.header("Projects")
+    with col2:
+        st.subheader("Crew (F&B)")
+        st.write("**Food & Beverage Operations** | 2 years")
+        st.markdown("""
+        - Provided customer service  
+        - Handled orders, ensured customer satisfaction, maintained quality
+        """)
 
-st.subheader("Security Smart Home Automation (Diploma Project)")
-st.markdown("""
-- Controlled home appliances (lights and fans) automatically  
-- Integrated alarm system with phone notifications in case of intrusions
-""")
+    st.subheader("Stokis Business – Chocojar (1 year)")
+    st.markdown("""
+    - Managed stock distribution and customer engagement  
+    - Enhanced sales through effective marketing strategies
+    """)
 
-st.subheader("Automated Vending Machine for Prescription Medication (Degree Group Project)")
-st.markdown("""
-- Built an IoT-based vending system using ESP32-CAM and QR code  
-- Dispensed medicine efficiently to reduce patient waiting times
-""")
+# Skills Page
+elif page == "Skills":
+    st.header("⚡ Skills")
+    col1, col2 = st.columns(2)
 
-st.subheader("TRIPJR Travel App (Degree Group Assignment)")
-st.markdown("""
-- Developed a Flutter-based travel application  
-- Enabled users to search and book nearby hotels or homestays for vacations
-""")
+    with col1:
+        st.markdown("""
+        - **Programming Languages:** Java, C++  
+        - **Web Development:** HTML, Flutter
+        """)
+
+    with col2:
+        st.markdown("""
+        - Strong communication & teamwork  
+        - Business & marketing experience  
+        - Customer service excellence
+        """)
+
+# Projects Page
+elif page == "Projects":
+    st.header("🚀 Projects")
+
+    st.subheader("Security Smart Home Automation (Diploma Project)")
+    st.markdown("""
+    - Controlled lights & fans automatically  
+    - Integrated alarm system with phone notifications for intrusions
+    """)
+
+    st.subheader("Automated Vending Machine for Prescription Medication (Degree Group Project)")
+    st.markdown("""
+    - IoT-based vending system using ESP32-CAM & QR code  
+    - Dispensed medicine to reduce patient waiting times
+    """)
+
+    st.subheader("TRIPJR Travel App (Degree Group Assignment)")
+    st.markdown("""
+    - Flutter-based travel app  
+    - Enabled hotel & homestay search + booking
+    """)
 
