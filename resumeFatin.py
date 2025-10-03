@@ -6,8 +6,7 @@ st.write("Email: rhfatin@gmail.com")
 st.write("Phone: (601) 6 480-5956")
 st.write("LinkedIn: https://www.linkedin.com/in/fatin-nurasiyah")
 st.header("Education")
-st.write("Bachelor in Information Technology, 
-          University of Malaysia, Kelantan , 2023-2027")
+st.write("Bachelor in Information Technology, University of Malaysia, Kelantan , 2023-2027")
 
 st.header("Work Experience")
 st.write("Internship (Diploma) , Asia Tech Biz Sdn Bhd , 6 months  ")
