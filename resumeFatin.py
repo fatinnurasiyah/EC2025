@@ -3,7 +3,7 @@ import streamlit as st
 col1, col2 = st.columns([1, 3])
 
 with col1:
-    st.image("FATIN.jpg", width=100)  
+    st.image("FATIN.jpg", width=130)  
 with col2:
     st.title("Fatin Nurasiyah Abdul Rahim")
     st.write("📧 rhfatin@gmail.com | 📱 (+60) 16-480-5956")
