@@ -8,8 +8,7 @@ with col1:
 with col2:
     st.title("Fatin Nurasiyah Abdul Rahim")
     st.write("📧 rhfatin@gmail.com | 📱 (+60) 16-480-5956")
-    st.markdown("🔗 [LinkedIn](https://www.linkedin.com/in/fatin-nurasiyah)")
-    st.write("🆔 NRIC: 020324-02-0672")
+    st.markdown("🔗 (https://www.linkedin.com/in/fatin-nurasiyah)")
 
 st.markdown("---")
 
