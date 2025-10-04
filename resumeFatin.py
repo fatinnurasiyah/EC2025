@@ -1,90 +1,103 @@
 import streamlit as st
 
+# 1️⃣ Setup page
 st.set_page_config(page_title="Resume - Fatin Nurasiyah", layout="wide")
 
-with st.container():
-    col1, col2 = st.columns([1, 3])
-    with col1:
-        st.image("FATIN.jpg", width=130)
-    with col2:
-        st.title("Fatin Nurasiyah Abdul Rahim")
-        st.write("📧 rhfatin@gmail.com | 📱 (+60) 16-480-5956")
-        st.markdown("[🔗 LinkedIn](https://www.linkedin.com/in/fatin-nurasiyah)")
-st.markdown("---")
+# 2️⃣ Compact layout (kurangkan ruang antara seksyen)
+st.markdown("""
+<style>
+    .block-container {
+        padding-top: 1rem;
+        padding-bottom: 1rem;
+        padding-left: 3rem;
+        padding-right: 3rem;
+    }
+    h1, h2, h3 {
+        margin-bottom: 0.2rem;
+    }
+    p {
+        margin-bottom: 0.3rem;
+    }
+</style>
+""", unsafe_allow_html=True)
 
-with st.container():
-    st.header("🎓 Education")
-    st.write("**Bachelor in Information Technology**, University of Malaysia, Kelantan (2023–2027)")
-st.markdown("---")
+# 3️⃣ Header section
+col1, col2 = st.columns([1, 3])
+with col1:
+    st.image("FATIN.jpg", width=120)
+with col2:
+    st.title("Fatin Nurasiyah Abdul Rahim")
+    st.write("📧 rhfatin@gmail.com | 📱 (+60) 16-480-5956")
+    st.markdown("[🔗 LinkedIn](https://www.linkedin.com/in/fatin-nurasiyah)")
 
-with st.container():
-    st.header("💼 Work Experience")
+st.write("---")
 
-    col1, col2 = st.columns(2)
+# 4️⃣ Education
+st.subheader("🎓 Education")
+st.write("**Bachelor in Information Technology**, University of Malaysia, Kelantan (2023–2027)")
 
-    with col1:
-        st.subheader("Internship (Diploma)")
-        st.write("**Asia Tech Biz Sdn Bhd** | 6 months")
-        st.markdown("""
-        - Assisted in IT-related tasks  
-        - Gained exposure to real-world business systems
-        """)
+st.write("---")
 
-    with col2:
-        st.subheader("Crew (F&B)")
-        st.write("**Food & Beverage Operations** | 2 years")
-        st.markdown("""
-        - Provided customer service  
-        - Handled orders, ensured customer satisfaction, maintained quality
-        """)
+# 5️⃣ Work Experience
+st.subheader("💼 Work Experience")
 
-    st.subheader("Stokis Business – Chocojar (1 year)")
+col1, col2 = st.columns(2)
+with col1:
+    st.write("**Internship (Diploma)** — Asia Tech Biz Sdn Bhd (6 months)")
     st.markdown("""
-    - Managed stock distribution and customer engagement  
-    - Enhanced sales through effective marketing strategies
-    """)
-st.markdown("---")
-
-with st.container():
-    st.header("⚡ Skills")
-    col1, col2 = st.columns(2)
-
-    with col1:
-        st.markdown("""
-        - **Programming Languages:** Java, C++  
-        - **Web Development:** HTML, Flutter
-        """)
-
-    with col2:
-        st.markdown("""
-        - Strong communication & teamwork  
-        - Business & marketing experience  
-        - Customer service excellence
-        """)
-st.markdown("---")
-
-with st.container():
-    st.header("🚀 Projects")
-
-    st.subheader("Security Smart Home Automation (Diploma Project)")
-    st.markdown("""
-    - Controlled lights & fans automatically  
-    - Integrated alarm system with phone notifications for intrusions
+    - Assisted in IT-related tasks  
+    - Gained exposure to real-world business systems
     """)
 
-    st.subheader("Automated Vending Machine for Prescription Medication (Degree Group Project)")
+with col2:
+    st.write("**Crew (F&B)** — Food & Beverage Operations (2 years)")
     st.markdown("""
-    - IoT-based vending system using ESP32-CAM & QR code  
-    - Dispensed medicine to reduce patient waiting times
+    - Provided customer service  
+    - Handled orders, ensured customer satisfaction, maintained quality
     """)
 
-    st.subheader("TRIPJR Travel App (Degree Group Assignment)")
+st.write("**Stokis Business – Chocojar (1 year)**")
+st.markdown("""
+- Managed stock distribution and customer engagement  
+- Enhanced sales through effective marketing strategies
+""")
+
+st.write("---")
+
+# 6️⃣ Skills
+st.subheader("⚡ Skills")
+
+col1, col2 = st.columns(2)
+with col1:
     st.markdown("""
-    - Flutter-based travel app  
-    - Enabled hotel & homestay search + booking
+    - **Programming Languages:** Java, C++  
+    - **Web Development:** HTML, Flutter
+    """)
+with col2:
+    st.markdown("""
+    - Strong communication & teamwork  
+    - Business & marketing experience  
+    - Customer service excellence
     """)
 
-st.markdown("---")
+st.write("---")
+
+# 7️⃣ Projects
+st.subheader("🚀 Projects")
+st.markdown("""
+**Security Smart Home Automation (Diploma Project)**  
+- Controlled lights & fans automatically  
+- Integrated alarm system with phone notifications  
+
+**Automated Vending Machine for Prescription Medication (Degree Group Project)**  
+- IoT-based vending system using ESP32-CAM & QR code  
+- Dispensed medicine to reduce patient waiting times  
+
+**TRIPJR Travel App (Degree Group Assignment)**  
+- Flutter-based travel app  
+- Enabled hotel & homestay search + booking
+""")
+
+st.write("---")
 st.markdown("<p style='text-align: center; color: gray;'>© 2025 Fatin Nurasiyah Abdul Rahim</p>", unsafe_allow_html=True)
-
 
