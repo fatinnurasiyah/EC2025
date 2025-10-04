@@ -1,9 +1,8 @@
 import streamlit as st
 
-# ============ PAGE SETTINGS ============
-st.set_page_config(page_title="Resume - Fatin Nurasiyah", layout="wide")
 
-# ============ CUSTOM CSS ============
+st.set_page_config(page_title="Resume - Fatin Nurasiyah", layout="centered")
+
 st.markdown("""
     <style>
     .main {
@@ -11,7 +10,6 @@ st.markdown("""
         padding: 2rem;
     }
 
-    /* Header styles */
     h1 {
         font-size: 2rem !important;
         color: #2c3e50;
@@ -42,15 +40,6 @@ st.markdown("""
         border: 1px solid #e0e0e0;
     }
 
-    /* Reduce gap between image and text columns */
-    [data-testid="column"] {
-        padding-top: 0 !important;
-        padding-bottom: 0 !important;
-        margin-top: 0 !important;
-        margin-bottom: 0 !important;
-    }
-
-    /* Adjust spacing specifically for header */
     .header-container {
         margin-bottom: 0.5rem;
     }
@@ -64,7 +53,6 @@ st.markdown("""
     </style>
 """, unsafe_allow_html=True)
 
-# ============ HEADER SECTION ============
 with st.container():
     st.markdown("<div class='header-container'>", unsafe_allow_html=True)
     col1, col2 = st.columns([1, 3])
@@ -77,13 +65,11 @@ with st.container():
     st.markdown("</div>", unsafe_allow_html=True)
 st.markdown("<hr>", unsafe_allow_html=True)
 
-# ============ EDUCATION ============
 with st.container():
     st.markdown("<h2>🎓 Education</h2>", unsafe_allow_html=True)
     st.write("**Bachelor in Information Technology**, University of Malaysia, Kelantan (2023–2027)")
 st.markdown("<hr>", unsafe_allow_html=True)
 
-# ============ WORK EXPERIENCE ============
 with st.container():
     st.markdown("<h2>💼 Work Experience</h2>", unsafe_allow_html=True)
     col1, col2 = st.columns(2)
@@ -111,7 +97,6 @@ with st.container():
     """)
 st.markdown("<hr>", unsafe_allow_html=True)
 
-# ============ SKILLS ============
 with st.container():
     st.markdown("<h2>⚡ Skills</h2>", unsafe_allow_html=True)
     col1, col2 = st.columns(2)
@@ -130,7 +115,6 @@ with st.container():
         """)
 st.markdown("<hr>", unsafe_allow_html=True)
 
-# ============ PROJECTS ============
 with st.container():
     st.markdown("<h2>🚀 Projects</h2>", unsafe_allow_html=True)
 
