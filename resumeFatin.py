@@ -147,4 +147,12 @@ with st.container():
     """)
 
     st.markdown("<h3>TRIPJR Travel App (Degree Group Assignment)</h3>", unsafe_allow_html=True)
-    st.markdo
+    st.markdown("""
+    - Flutter-based travel app  
+    - Enabled hotel & homestay search + booking
+    """)
+
+# ============ FOOTER ============
+st.markdown("<hr>", unsafe_allow_html=True)
+st.markdown("<div class='footer'>© 2025 Fatin Nurasiyah Abdul Rahim</div>", unsafe_allow_html=True)
+
