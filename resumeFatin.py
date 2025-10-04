@@ -6,7 +6,6 @@ st.set_page_config(page_title="Resume - Fatin Nurasiyah", layout="wide")
 # ============ CUSTOM CSS ============
 st.markdown("""
     <style>
-    /* General page style */
     .main {
         background-color: #fafafa;
         padding: 2rem;
@@ -31,21 +30,31 @@ st.markdown("""
         margin-bottom: 0.3rem;
     }
 
-    /* Text and list */
     p, li {
         font-size: 1rem !important;
         color: #444444;
         line-height: 1.5;
     }
 
-    /* Divider styling */
     hr {
         margin-top: 1.5rem;
         margin-bottom: 1.5rem;
         border: 1px solid #e0e0e0;
     }
 
-    /* Footer */
+    /* Reduce gap between image and text columns */
+    [data-testid="column"] {
+        padding-top: 0 !important;
+        padding-bottom: 0 !important;
+        margin-top: 0 !important;
+        margin-bottom: 0 !important;
+    }
+
+    /* Adjust spacing specifically for header */
+    .header-container {
+        margin-bottom: 0.5rem;
+    }
+
     .footer {
         text-align: center;
         color: gray;
@@ -57,6 +66,7 @@ st.markdown("""
 
 # ============ HEADER SECTION ============
 with st.container():
+    st.markdown("<div class='header-container'>", unsafe_allow_html=True)
     col1, col2 = st.columns([1, 3])
     with col1:
         st.image("FATIN.jpg", width=150)
@@ -64,6 +74,7 @@ with st.container():
         st.markdown("<h1>Fatin Nurasiyah Abdul Rahim</h1>", unsafe_allow_html=True)
         st.write("📧 rhfatin@gmail.com | 📱 (+60) 16-480-5956")
         st.markdown("[🔗 LinkedIn](https://www.linkedin.com/in/fatin-nurasiyah-21559b129)")
+    st.markdown("</div>", unsafe_allow_html=True)
 st.markdown("<hr>", unsafe_allow_html=True)
 
 # ============ EDUCATION ============
@@ -136,11 +147,4 @@ with st.container():
     """)
 
     st.markdown("<h3>TRIPJR Travel App (Degree Group Assignment)</h3>", unsafe_allow_html=True)
-    st.markdown("""
-    - Flutter-based travel app  
-    - Enabled hotel & homestay search + booking
-    """)
-
-# ============ FOOTER ============
-st.markdown("<hr>", unsafe_allow_html=True)
-st.markdown("<div class='footer'>© 2025 Fatin Nurasiyah Abdul Rahim</div>", unsafe_allow_html=True)
+    st.markdo
