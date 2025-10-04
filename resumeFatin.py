@@ -100,4 +100,18 @@ st.markdown("""
 
 st.write("---")
 st.markdown("<p style='text-align: center; color: gray;'>© 2025 Fatin Nurasiyah Abdul Rahim</p>", unsafe_allow_html=True)
+st.markdown("---")
+st.subheader("🧭 Test and Refine")
+
+st.markdown("""
+- ✅ **Ensure all information is accurate and well-organized.**  
+- 🎨 **Check that the page is visually appealing and easy to navigate.**  
+- 💡 Optionally, add styling with `st.markdown` or CSS for a polished look.  
+- ⚙️ **Explore Streamlit’s documentation** for extra features like:
+  - Buttons (`st.button`)
+  - Sliders (`st.slider`)
+  - Media display (`st.audio`, `st.video`)
+  - Layout customization (`st.columns`, `st.container`)
+- 🧼 **Keep your design clean and professional.**
+""")
 
