@@ -61,7 +61,7 @@ with st.container():
     with col2:
         st.markdown("<h1>Fatin Nurasiyah Abdul Rahim</h1>", unsafe_allow_html=True)
         st.write("📧 rhfatin@gmail.com | 📱 (+60) 16-480-5956")
-        st.markdown("[🔗 LinkedIn](https://www.linkedin.com/in/fatin-nurasiyah-21559b129)")
+        st.markdown("[🔗 FatinNurasiyah-linkedin](https://www.linkedin.com/in/fatin-nurasiyah-21559b129)")
     st.markdown("</div>", unsafe_allow_html=True)
 st.markdown("<hr>", unsafe_allow_html=True)
 
