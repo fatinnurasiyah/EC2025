@@ -3,31 +3,82 @@ import streamlit as st
 # ============ PAGE SETTINGS ============
 st.set_page_config(page_title="Resume - Fatin Nurasiyah", layout="wide")
 
+# ============ CUSTOM CSS ============
+st.markdown("""
+    <style>
+    /* General page style */
+    .main {
+        background-color: #fafafa;
+        padding: 2rem;
+    }
+
+    /* Header styles */
+    h1 {
+        font-size: 2rem !important;
+        color: #2c3e50;
+        margin-bottom: 0.3rem;
+    }
+    h2 {
+        font-size: 1.3rem !important;
+        color: #1a73e8;
+        margin-top: 1.8rem;
+        margin-bottom: 0.6rem;
+    }
+    h3 {
+        font-size: 1.1rem !important;
+        color: #333333;
+        margin-top: 1rem;
+        margin-bottom: 0.3rem;
+    }
+
+    /* Text and list */
+    p, li {
+        font-size: 1rem !important;
+        color: #444444;
+        line-height: 1.5;
+    }
+
+    /* Divider styling */
+    hr {
+        margin-top: 1.5rem;
+        margin-bottom: 1.5rem;
+        border: 1px solid #e0e0e0;
+    }
+
+    /* Footer */
+    .footer {
+        text-align: center;
+        color: gray;
+        margin-top: 2rem;
+        font-size: 0.9rem;
+    }
+    </style>
+""", unsafe_allow_html=True)
+
 # ============ HEADER SECTION ============
 with st.container():
     col1, col2 = st.columns([1, 3])
     with col1:
-        st.image("FATIN.jpg", width=130)
+        st.image("FATIN.jpg", width=150)
     with col2:
-        st.title("Fatin Nurasiyah Abdul Rahim")
+        st.markdown("<h1>Fatin Nurasiyah Abdul Rahim</h1>", unsafe_allow_html=True)
         st.write("📧 rhfatin@gmail.com | 📱 (+60) 16-480-5956")
-        st.markdown("[🔗 LinkedIn](https://www.linkedin.com/in/fatin-nurasiyah-21559b129?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=ios_app)")
-st.markdown("---")
+        st.markdown("[🔗 LinkedIn](https://www.linkedin.com/in/fatin-nurasiyah-21559b129)")
+st.markdown("<hr>", unsafe_allow_html=True)
 
 # ============ EDUCATION ============
 with st.container():
-    st.header("🎓 Education")
+    st.markdown("<h2>🎓 Education</h2>", unsafe_allow_html=True)
     st.write("**Bachelor in Information Technology**, University of Malaysia, Kelantan (2023–2027)")
-st.markdown("---")
+st.markdown("<hr>", unsafe_allow_html=True)
 
 # ============ WORK EXPERIENCE ============
 with st.container():
-    st.header("💼 Work Experience")
-
+    st.markdown("<h2>💼 Work Experience</h2>", unsafe_allow_html=True)
     col1, col2 = st.columns(2)
 
     with col1:
-        st.subheader("Internship (Diploma)")
+        st.markdown("<h3>Internship (Diploma)</h3>", unsafe_allow_html=True)
         st.write("**Asia Tech Biz Sdn Bhd** | 6 months")
         st.markdown("""
         - Assisted in IT-related tasks  
@@ -35,23 +86,23 @@ with st.container():
         """)
 
     with col2:
-        st.subheader("Crew (F&B)")
+        st.markdown("<h3>Crew (F&B)</h3>", unsafe_allow_html=True)
         st.write("**Food & Beverage Operations** | 2 years")
         st.markdown("""
         - Provided customer service  
         - Handled orders, ensured customer satisfaction, maintained quality
         """)
 
-    st.subheader("Stokis Business – Chocojar (1 year)")
+    st.markdown("<h3>Stokis Business – Chocojar (1 year)</h3>", unsafe_allow_html=True)
     st.markdown("""
     - Managed stock distribution and customer engagement  
     - Enhanced sales through effective marketing strategies
     """)
-st.markdown("---")
+st.markdown("<hr>", unsafe_allow_html=True)
 
 # ============ SKILLS ============
 with st.container():
-    st.header("⚡ Skills")
+    st.markdown("<h2>⚡ Skills</h2>", unsafe_allow_html=True)
     col1, col2 = st.columns(2)
 
     with col1:
@@ -66,30 +117,30 @@ with st.container():
         - Business & marketing experience  
         - Customer service excellence
         """)
-st.markdown("---")
+st.markdown("<hr>", unsafe_allow_html=True)
 
 # ============ PROJECTS ============
 with st.container():
-    st.header("🚀 Projects")
+    st.markdown("<h2>🚀 Projects</h2>", unsafe_allow_html=True)
 
-    st.subheader("Security Smart Home Automation (Diploma Project)")
+    st.markdown("<h3>Security Smart Home Automation (Diploma Project)</h3>", unsafe_allow_html=True)
     st.markdown("""
     - Controlled lights & fans automatically  
     - Integrated alarm system with phone notifications for intrusions
     """)
 
-    st.subheader("Automated Vending Machine for Prescription Medication (Degree Group Project)")
+    st.markdown("<h3>Automated Vending Machine for Prescription Medication (Degree Group Project)</h3>", unsafe_allow_html=True)
     st.markdown("""
     - IoT-based vending system using ESP32-CAM & QR code  
     - Dispensed medicine to reduce patient waiting times
     """)
 
-    st.subheader("TRIPJR Travel App (Degree Group Assignment)")
+    st.markdown("<h3>TRIPJR Travel App (Degree Group Assignment)</h3>", unsafe_allow_html=True)
     st.markdown("""
     - Flutter-based travel app  
     - Enabled hotel & homestay search + booking
     """)
 
 # ============ FOOTER ============
-st.markdown("---")
-st.markdown("<p style='text-align: center; color: gray;'>© 2025 Fatin Nurasiyah Abdul Rahim</p>", unsafe_allow_html=True)
+st.markdown("<hr>", unsafe_allow_html=True)
+st.markdown("<div class='footer'>© 2025 Fatin Nurasiyah Abdul Rahim</div>", unsafe_allow_html=True)
