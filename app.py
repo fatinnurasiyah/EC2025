@@ -89,4 +89,3 @@ if st.button("Run Genetic Algorithm"):
     
     st.table(table_data)
     st.success(f"Total Ratings: {fitness_function(best_schedule):.2f}")
-
