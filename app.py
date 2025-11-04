@@ -13,8 +13,7 @@ def read_csv_to_dict(file_path):
             program_ratings[program] = ratings
     return program_ratings
 
-import os
-ratings = read_csv_to_dict(os.path.join(os.path.dirname(__file__), "program_ratings_modified.csv"))
+ratings = read_csv_to_dict(os.path.join(os.path.dirname(__file__), "data", "program_ratings_modified.csv"))
 
 st.title("📺 TV Program Scheduling using Genetic Algorithm")
 
@@ -89,3 +88,4 @@ if st.button("Run Genetic Algorithm"):
     
     st.table(table_data)
     st.success(f"Total Ratings: {fitness_function(best_schedule):.2f}")
+
